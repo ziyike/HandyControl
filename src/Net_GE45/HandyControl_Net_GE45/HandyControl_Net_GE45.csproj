@@ -10,7 +10,7 @@
     <NoWarn>0067;0649;1591;SYSLIB0003;SYSLIB0004</NoWarn>
     <UseWPF>true</UseWPF>
     <VersionPrefix>3.0.0</VersionPrefix>
-    <VersionSuffix>beta.1</VersionSuffix>
+    <VersionSuffix>beta.3</VersionSuffix>
     <Version>$(VersionPrefix)-$(VersionSuffix)</Version>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -72,6 +72,9 @@
     </Content>
   </ItemGroup>
   <Import Project="..\..\Shared\HandyControl_Shared\HandyControl_Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <PackageReference Include="ControlzEx" Version="4.4.0" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="..\..\Shared\HandyControl_Shared\Resources\dropper.cur">
       <Link>Resources\dropper.cur</Link>

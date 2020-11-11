@@ -72,6 +72,41 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Slider\RangeSlider\RangeThumb.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Slider\RangeSlider\TwoWayRangeBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Block\RunningBlock\RunningBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\BooleanBoxes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ClipBorder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ClipBorder.Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\CloseTabItemAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\CommandTriggerAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ContentControlEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ControlsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\HeaderedControlHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\IMetroThumb.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\IsNullConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MahAppsException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MarkupConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroAnimatedSingleRowTabControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroAnimatedTabControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroContentControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroTabControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroTabItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroTabItemCloseButtonWidthConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroThumb.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroThumbContentControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroThumbContentControlAutomationPeer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroThumbContentControlDragCompletedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\MetroThumbContentControlDragStartedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ReloadBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ScrollViewerHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\TabControlHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\TabControlSelectFirstVisibleTabBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ToLowerConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\ToUpperConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\TransitioningContentControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\TreeHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\Underline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TabControl\VisualStates.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Text\SimpleText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Window\GlowWindow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Collections\DateTimeRangeComparer.cs" />
@@ -464,6 +499,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\ContentControlEx.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\Controls.TabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\ImageSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -472,11 +515,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\MetroAnimatedSingleRowTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\MetroAnimatedTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\MetroContentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\MetroTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\MetroTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\PropertyGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\Base\PropertyGridBaseStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\Styles\Underline.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

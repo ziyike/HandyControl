@@ -2,9 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <system:Double x:Key="DefaultControlHeight">30</system:Double>
-    <Thickness x:Key="DefaultControlPadding">10,6</Thickness>
-    <Thickness x:Key="DefaultInputPadding">8,6</Thickness>
+    <system:Double x:Key="DefaultControlHeight">20</system:Double>
+    <Thickness x:Key="DefaultControlPadding">2,1</Thickness>
+    <Thickness x:Key="DefaultInputPadding">4,3</Thickness>
     <CornerRadius x:Key="DefaultCornerRadius">4</CornerRadius>
 
 </ResourceDictionary>
