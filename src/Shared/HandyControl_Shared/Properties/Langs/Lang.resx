@@ -240,4 +240,7 @@
   <data name="All" xml:space="preserve">
     <value>全部</value>
   </data>
+  <data name="TagPlaceHolder" xml:space="preserve">
+    <value>用分号或空格分隔标签</value>
+  </data>
 </root>

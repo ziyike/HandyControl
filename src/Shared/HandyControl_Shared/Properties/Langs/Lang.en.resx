@@ -240,4 +240,7 @@
   <data name="All" xml:space="preserve">
     <value>All</value>
   </data>
+  <data name="TagPlaceHolder" xml:space="preserve">
+    <value>User ; or space to seperate</value>
+  </data>
 </root>

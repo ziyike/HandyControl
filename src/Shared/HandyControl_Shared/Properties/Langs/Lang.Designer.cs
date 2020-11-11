@@ -432,5 +432,16 @@ namespace HandyControl.Properties.Langs {
                 return ResourceManager.GetString("ZoomOut", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to 用;分隔标签; 或空间.
+        /// </summary>
+        public static string TagPlaceHolder
+        {
+            get
+            {
+                return ResourceManager.GetString("TagPlaceHolder", resourceCulture);
+            }
+        }
     }
 }

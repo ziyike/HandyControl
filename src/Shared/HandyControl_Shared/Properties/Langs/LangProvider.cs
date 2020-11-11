@@ -77,6 +77,7 @@ namespace HandyControl.Properties.Langs
 			OnPropertyChanged(nameof(Yes));
 			OnPropertyChanged(nameof(ZoomIn));
 			OnPropertyChanged(nameof(ZoomOut));
+            OnPropertyChanged(nameof(TagPlaceHolder));
         }
 
         /// <summary>
@@ -278,6 +279,11 @@ namespace HandyControl.Properties.Langs
         ///   查找类似 缩小 的本地化字符串。
         /// </summary>
 		public string ZoomOut => Lang.ZoomOut;
+
+        /// <summary>
+        ///   查找类似 用分号或空格分隔标签 的本地化字符串。
+        /// </summary>
+		public string TagPlaceHolder => Lang.TagPlaceHolder;
 
 
         public event PropertyChangedEventHandler PropertyChanged;
