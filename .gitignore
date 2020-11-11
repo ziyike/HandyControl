@@ -12,3 +12,4 @@ build/*
 build/tools/*
 !build/tools/packages.config
 !build/tools/VisualStudioToolsManifest.xml
+/src/nuget.config

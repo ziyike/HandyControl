@@ -4,11 +4,14 @@
     <RootNamespace>HandyControl</RootNamespace>
     <TargetFrameworks>netcoreapp3.1;net5.0-windows</TargetFrameworks>
     <Description>Contains some commonly used simple WPF controls</Description>
-    <PackageId>HandyControl-Current</PackageId>
+    <PackageId>HandyControl.Current</PackageId>
     <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <NoWarn>0067;0649;1591</NoWarn>
+    <SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
+    <NoWarn>0067;0649;1591;SYSLIB0003;SYSLIB0004</NoWarn>
     <UseWPF>true</UseWPF>
+    <VersionPrefix>3.0.0</VersionPrefix>
+    <VersionSuffix>beta.1</VersionSuffix>
+    <Version>$(VersionPrefix)-$(VersionSuffix)</Version>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\HandyControl.xml</DocumentationFile>
